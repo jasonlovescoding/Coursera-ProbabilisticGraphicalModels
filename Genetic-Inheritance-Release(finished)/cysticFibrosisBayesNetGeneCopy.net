@@ -1,0 +1,329 @@
+net
+{
+	node_size = (90 36);
+}
+
+node IraParent1GeneCopy
+{
+	label = "IraParent1GeneCopy";
+	position = (1040 600);
+	states = ("F" "f" "n");
+}
+
+node IraParent2GeneCopy
+{
+	label = "IraParent2GeneCopy";
+	position = (1170 600);
+	states = ("F" "f" "n");
+}
+
+node IraPhenotype
+{
+	label = "IraPhenotype";
+	position = (1105 500);
+	states = ("CysticFibrosis" "NoCysticFibrosis");
+}
+
+node JamesParent1GeneCopy
+{
+	label = "JamesParent1GeneCopy";
+	position = (1300 400);
+	states = ("F" "f" "n");
+}
+
+node JamesParent2GeneCopy
+{
+	label = "JamesParent2GeneCopy";
+	position = (1430 400);
+	states = ("F" "f" "n");
+}
+
+node JamesPhenotype
+{
+	label = "JamesPhenotype";
+	position = (1365 300);
+	states = ("CysticFibrosis" "NoCysticFibrosis");
+}
+
+node RobinParent1GeneCopy
+{
+	label = "RobinParent1GeneCopy";
+	position = (780 600);
+	states = ("F" "f" "n");
+}
+
+node RobinParent2GeneCopy
+{
+	label = "RobinParent2GeneCopy";
+	position = (910 600);
+	states = ("F" "f" "n");
+}
+
+node RobinPhenotype
+{
+	label = "RobinPhenotype";
+	position = (845 500);
+	states = ("CysticFibrosis" "NoCysticFibrosis");
+}
+
+node EvaParent1GeneCopy
+{
+	label = "EvaParent1GeneCopy";
+	position = (520 400);
+	states = ("F" "f" "n");
+}
+
+node EvaParent2GeneCopy
+{
+	label = "EvaParent2GeneCopy";
+	position = (650 400);
+	states = ("F" "f" "n");
+}
+
+node EvaPhenotype
+{
+	label = "EvaPhenotype";
+	position = (585 300);
+	states = ("CysticFibrosis" "NoCysticFibrosis");
+}
+
+node JasonParent1GeneCopy
+{
+	label = "JasonParent1GeneCopy";
+	position = (1560 200);
+	states = ("F" "f" "n");
+}
+
+node JasonParent2GeneCopy
+{
+	label = "JasonParent2GeneCopy";
+	position = (1690 200);
+	states = ("F" "f" "n");
+}
+
+node JasonPhenotype
+{
+	label = "JasonPhenotype";
+	position = (1625 100);
+	states = ("CysticFibrosis" "NoCysticFibrosis");
+}
+
+node ReneParent1GeneCopy
+{
+	label = "ReneParent1GeneCopy";
+	position = (2080 400);
+	states = ("F" "f" "n");
+}
+
+node ReneParent2GeneCopy
+{
+	label = "ReneParent2GeneCopy";
+	position = (2210 400);
+	states = ("F" "f" "n");
+}
+
+node RenePhenotype
+{
+	label = "RenePhenotype";
+	position = (2145 300);
+	states = ("CysticFibrosis" "NoCysticFibrosis");
+}
+
+node BenjaminParent1GeneCopy
+{
+	label = "BenjaminParent1GeneCopy";
+	position = (1820 200);
+	states = ("F" "f" "n");
+}
+
+node BenjaminParent2GeneCopy
+{
+	label = "BenjaminParent2GeneCopy";
+	position = (1950 200);
+	states = ("F" "f" "n");
+}
+
+node BenjaminPhenotype
+{
+	label = "BenjaminPhenotype";
+	position = (1885 100);
+	states = ("CysticFibrosis" "NoCysticFibrosis");
+}
+
+node SandraParent1GeneCopy
+{
+	label = "SandraParent1GeneCopy";
+	position = (260 200);
+	states = ("F" "f" "n");
+}
+
+node SandraParent2GeneCopy
+{
+	label = "SandraParent2GeneCopy";
+	position = (390 200);
+	states = ("F" "f" "n");
+}
+
+node SandraPhenotype
+{
+	label = "SandraPhenotype";
+	position = (325 100);
+	states = ("CysticFibrosis" "NoCysticFibrosis");
+}
+
+node AaronParent1GeneCopy
+{
+	label = "AaronParent1GeneCopy";
+	position = (0 400);
+	states = ("F" "f" "n");
+}
+
+node AaronParent2GeneCopy
+{
+	label = "AaronParent2GeneCopy";
+	position = (130 400);
+	states = ("F" "f" "n");
+}
+
+node AaronPhenotype
+{
+	label = "AaronPhenotype";
+	position = (65 300);
+	states = ("CysticFibrosis" "NoCysticFibrosis");
+}
+
+potential (IraParent1GeneCopy |)
+{
+	data = (0.100000 0.700000 0.200000);
+}
+
+potential (JamesParent1GeneCopy | IraParent1GeneCopy IraParent2GeneCopy)
+{
+	data = (1.000000 0.000000 0.000000 0.500000 0.500000 0.000000 0.500000 0.000000 0.500000 0.500000 0.500000 0.000000 0.000000 1.000000 0.000000 0.000000 0.500000 0.500000 0.500000 0.000000 0.500000 0.000000 0.500000 0.500000 0.000000 0.000000 1.000000);
+}
+
+potential (RobinParent1GeneCopy |)
+{
+	data = (0.100000 0.700000 0.200000);
+}
+
+potential (EvaParent1GeneCopy | IraParent1GeneCopy IraParent2GeneCopy)
+{
+	data = (1.000000 0.000000 0.000000 0.500000 0.500000 0.000000 0.500000 0.000000 0.500000 0.500000 0.500000 0.000000 0.000000 1.000000 0.000000 0.000000 0.500000 0.500000 0.500000 0.000000 0.500000 0.000000 0.500000 0.500000 0.000000 0.000000 1.000000);
+}
+
+potential (JasonParent1GeneCopy | JamesParent1GeneCopy JamesParent2GeneCopy)
+{
+	data = (1.000000 0.000000 0.000000 0.500000 0.500000 0.000000 0.500000 0.000000 0.500000 0.500000 0.500000 0.000000 0.000000 1.000000 0.000000 0.000000 0.500000 0.500000 0.500000 0.000000 0.500000 0.000000 0.500000 0.500000 0.000000 0.000000 1.000000);
+}
+
+potential (ReneParent1GeneCopy |)
+{
+	data = (0.100000 0.700000 0.200000);
+}
+
+potential (BenjaminParent1GeneCopy | JamesParent1GeneCopy JamesParent2GeneCopy)
+{
+	data = (1.000000 0.000000 0.000000 0.500000 0.500000 0.000000 0.500000 0.000000 0.500000 0.500000 0.500000 0.000000 0.000000 1.000000 0.000000 0.000000 0.500000 0.500000 0.500000 0.000000 0.500000 0.000000 0.500000 0.500000 0.000000 0.000000 1.000000);
+}
+
+potential (SandraParent1GeneCopy | EvaParent1GeneCopy EvaParent2GeneCopy)
+{
+	data = (1.000000 0.000000 0.000000 0.500000 0.500000 0.000000 0.500000 0.000000 0.500000 0.500000 0.500000 0.000000 0.000000 1.000000 0.000000 0.000000 0.500000 0.500000 0.500000 0.000000 0.500000 0.000000 0.500000 0.500000 0.000000 0.000000 1.000000);
+}
+
+potential (AaronParent1GeneCopy |)
+{
+	data = (0.100000 0.700000 0.200000);
+}
+
+potential (IraParent2GeneCopy |)
+{
+	data = (0.100000 0.700000 0.200000);
+}
+
+potential (JamesParent2GeneCopy | RobinParent1GeneCopy RobinParent2GeneCopy)
+{
+	data = (1.000000 0.000000 0.000000 0.500000 0.500000 0.000000 0.500000 0.000000 0.500000 0.500000 0.500000 0.000000 0.000000 1.000000 0.000000 0.000000 0.500000 0.500000 0.500000 0.000000 0.500000 0.000000 0.500000 0.500000 0.000000 0.000000 1.000000);
+}
+
+potential (RobinParent2GeneCopy |)
+{
+	data = (0.100000 0.700000 0.200000);
+}
+
+potential (EvaParent2GeneCopy | RobinParent1GeneCopy RobinParent2GeneCopy)
+{
+	data = (1.000000 0.000000 0.000000 0.500000 0.500000 0.000000 0.500000 0.000000 0.500000 0.500000 0.500000 0.000000 0.000000 1.000000 0.000000 0.000000 0.500000 0.500000 0.500000 0.000000 0.500000 0.000000 0.500000 0.500000 0.000000 0.000000 1.000000);
+}
+
+potential (JasonParent2GeneCopy | ReneParent1GeneCopy ReneParent2GeneCopy)
+{
+	data = (1.000000 0.000000 0.000000 0.500000 0.500000 0.000000 0.500000 0.000000 0.500000 0.500000 0.500000 0.000000 0.000000 1.000000 0.000000 0.000000 0.500000 0.500000 0.500000 0.000000 0.500000 0.000000 0.500000 0.500000 0.000000 0.000000 1.000000);
+}
+
+potential (ReneParent2GeneCopy |)
+{
+	data = (0.100000 0.700000 0.200000);
+}
+
+potential (BenjaminParent2GeneCopy | ReneParent1GeneCopy ReneParent2GeneCopy)
+{
+	data = (1.000000 0.000000 0.000000 0.500000 0.500000 0.000000 0.500000 0.000000 0.500000 0.500000 0.500000 0.000000 0.000000 1.000000 0.000000 0.000000 0.500000 0.500000 0.500000 0.000000 0.500000 0.000000 0.500000 0.500000 0.000000 0.000000 1.000000);
+}
+
+potential (SandraParent2GeneCopy | AaronParent1GeneCopy AaronParent2GeneCopy)
+{
+	data = (1.000000 0.000000 0.000000 0.500000 0.500000 0.000000 0.500000 0.000000 0.500000 0.500000 0.500000 0.000000 0.000000 1.000000 0.000000 0.000000 0.500000 0.500000 0.500000 0.000000 0.500000 0.000000 0.500000 0.500000 0.000000 0.000000 1.000000);
+}
+
+potential (AaronParent2GeneCopy |)
+{
+	data = (0.100000 0.700000 0.200000);
+}
+
+potential (IraPhenotype | IraParent1GeneCopy IraParent2GeneCopy)
+{
+	data = (0.800000 0.200000 0.600000 0.400000 0.100000 0.900000 0.600000 0.400000 0.500000 0.500000 0.050000 0.950000 0.100000 0.900000 0.050000 0.950000 0.010000 0.990000);
+}
+
+potential (JamesPhenotype | JamesParent1GeneCopy JamesParent2GeneCopy)
+{
+	data = (0.800000 0.200000 0.600000 0.400000 0.100000 0.900000 0.600000 0.400000 0.500000 0.500000 0.050000 0.950000 0.100000 0.900000 0.050000 0.950000 0.010000 0.990000);
+}
+
+potential (RobinPhenotype | RobinParent1GeneCopy RobinParent2GeneCopy)
+{
+	data = (0.800000 0.200000 0.600000 0.400000 0.100000 0.900000 0.600000 0.400000 0.500000 0.500000 0.050000 0.950000 0.100000 0.900000 0.050000 0.950000 0.010000 0.990000);
+}
+
+potential (EvaPhenotype | EvaParent1GeneCopy EvaParent2GeneCopy)
+{
+	data = (0.800000 0.200000 0.600000 0.400000 0.100000 0.900000 0.600000 0.400000 0.500000 0.500000 0.050000 0.950000 0.100000 0.900000 0.050000 0.950000 0.010000 0.990000);
+}
+
+potential (JasonPhenotype | JasonParent1GeneCopy JasonParent2GeneCopy)
+{
+	data = (0.800000 0.200000 0.600000 0.400000 0.100000 0.900000 0.600000 0.400000 0.500000 0.500000 0.050000 0.950000 0.100000 0.900000 0.050000 0.950000 0.010000 0.990000);
+}
+
+potential (RenePhenotype | ReneParent1GeneCopy ReneParent2GeneCopy)
+{
+	data = (0.800000 0.200000 0.600000 0.400000 0.100000 0.900000 0.600000 0.400000 0.500000 0.500000 0.050000 0.950000 0.100000 0.900000 0.050000 0.950000 0.010000 0.990000);
+}
+
+potential (BenjaminPhenotype | BenjaminParent1GeneCopy BenjaminParent2GeneCopy)
+{
+	data = (0.800000 0.200000 0.600000 0.400000 0.100000 0.900000 0.600000 0.400000 0.500000 0.500000 0.050000 0.950000 0.100000 0.900000 0.050000 0.950000 0.010000 0.990000);
+}
+
+potential (SandraPhenotype | SandraParent1GeneCopy SandraParent2GeneCopy)
+{
+	data = (0.800000 0.200000 0.600000 0.400000 0.100000 0.900000 0.600000 0.400000 0.500000 0.500000 0.050000 0.950000 0.100000 0.900000 0.050000 0.950000 0.010000 0.990000);
+}
+
+potential (AaronPhenotype | AaronParent1GeneCopy AaronParent2GeneCopy)
+{
+	data = (0.800000 0.200000 0.600000 0.400000 0.100000 0.900000 0.600000 0.400000 0.500000 0.500000 0.050000 0.950000 0.100000 0.900000 0.050000 0.950000 0.010000 0.990000);
+}
+
